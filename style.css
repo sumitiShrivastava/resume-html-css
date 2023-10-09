@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+*{
+font-family: 'Lato', sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: white;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(155, 25, 88, 0.724);
+}
+
+.container .left_side{
+
+    position: relative;
+    background: linear-gradient(45deg,#0000ff3d,#b16d9465,#0000ff3d);
+    padding: 40px;
+}
+
+.container .right_side{
+
+    position: relative;
+    background: rgb(246, 241, 241);
+    padding: 40px;
+}
+
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(21, 17, 21, 0.441);
+}
+
+.profileText .imgbox{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius:50%;
+    box-shadow: 4px 4px 4px 0px #120e05;;
+    overflow: hidden;
+}
+
+.profileText .imgbox img{
+ position: absolute;
+ top: 60px;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ object-fit:cover;
+ scale: 1.7;
+ transition: all 1s ease;
+}
+
+.profileText .imgbox img:hover{
+    transform: scale(1.2);
+}
+
+
+.profileText h2{
+    color: #100e0e;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+
+}
+
+.profileText h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+
+/*-----------------------------contact--------------------------------*/
+
+.contactInfo{
+    padding-top: 40px;
+  
+}
+
+.title{
+    color: rgb(22, 16, 16);
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.title h3{
+    font-size: 24px;
+  
+}
+
+.contactInfo ul{
+    position: relative;
+}
+
+.contactInfo ul li{
+    list-style: none;
+    position: relative;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+
+
+
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 30px ;
+    font-size: 20px;
+    color: rgb(28, 31, 222);
+}
+
+.contactInfo ul li span{
+    color: black;
+    font-weight: 600;
+}
+
+/*--------------------------Education----------------------------------*/
+.education ul li{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.education li{
+ margin-bottom: 25px;
+ 
+}
+
+.education li h5{
+    font-size: 20px;
+    color: blue;
+    font-weight: 600;
+}
+
+.education li h4{
+    font-size: 20px;
+    color: rgb(19, 8, 8);
+    font-weight: 500;
+}
+
+/*-------------------------------language-----------------------------*/
+.language .percent{
+ position: relative;
+ width: 100%;
+ height: 6px;
+ background-color: rgb(240, 240, 249);
+ display: block;
+ margin-top:5px ;
+}
+
+.language .percent div{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgba(56, 33, 189, 0.854);
+}
+
+
+/*-----------------------------right-slice-------------------------------*/
+
+.container .right_side{
+    position: relative;
+    background: linear-gradient(40deg,white,#f482b538);
+    padding: 40px;
+    padding-top: 60px;
+}
+
+.about{
+    margin-bottom: 50px;
+}
+
+.about:last-child{
+    margin-bottom: 0;
+}
+
+.title2{
+    color: #120e05;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p{
+    font-size: 20px;
+    font-weight: 100;
+    color: black;
+}
+
+/*----------------------------SKILL---------------------------*/
+
+.about.skills{
+    margin-top: 50px;
+}
+.skills .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+  
+
+}
+
+.skills .box h4{
+    font-size: 20px;
+    line-height: 45px;
+    text-transform: uppercase;
+    color: rgb(21, 19, 15);
+    font-weight: 550;
+}
+
+.skills .box .percent{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(211, 204, 204);
+}
+
+.skills .box .percent div{
+    position: absolute;
+    top: 0;
+    height: 0;
+    height: 100%;
+    background-color: rgba(50, 50, 179, 0.637);
+    border-radius: 20px;
+}
