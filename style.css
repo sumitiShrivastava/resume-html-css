@@ -24,7 +24,7 @@ body{
     margin: 50px;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    box-shadow: 0 35px 55px rgba(155, 25, 88, 0.724);
+   
 }
 
 .container .left_side{
